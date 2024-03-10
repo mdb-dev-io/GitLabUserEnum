@@ -1,14 +1,16 @@
 # GitLab User Enumeration Script
 
-This Python script is designed to enumerate valid usernames on a GitLab instance by iterating over a list of potential usernames and checking for their existence. The script provides real-time feedback, including a dynamic count of attempts, a running list of found usernames, and the option to use proxies for requests. The output is styled using colors inspired by the Dracula color scheme for better readability.
+This Python script is designed to enumerate valid usernames on a GitLab instance by iterating over a list of potential usernames and checking for their existence. The script provides real-time feedback, including a dynamic count of attempts, a running list of found usernames, and the option to use proxies for requests. 
+- The output is styled using colors inspired by the Dracula color scheme for better readability.
 
 ## Features
 
-- **Dynamic Progress Updates**: Displays a running count of usernames being tested.
-- **Colorful Output**: Utilizes the Dracula color scheme for terminal output.
-- **Proxy Support**: Allows traffic to be routed through specified proxies.
-- **Result Persistence**: Saves found usernames to `gitlabUserEnumValidUsers.txt`.
-- **Dracula Theme**: Terminal output follows the Dracula color scheme for improved readability.
+- **Dynamic Progress Updates**: Displays a running count of usernames being tested, providing real-time feedback on the script's progress.
+- **Colorful Output**: Utilizes the Dracula color scheme for terminal output, enhancing readability and user experience.
+- **Proxy Support**: Offers the option to route traffic through specified proxies, adding a layer of anonymity and the ability to bypass network restrictions.
+- **Result Persistence**: Saves found usernames to `gitlabUserEnumValidUsers.txt`, ensuring you have a record of valid usernames.
+- **Threading Capabilities**: Employs Python's threading to make concurrent HTTP requests, significantly increasing the efficiency and speed of the enumeration process. This allows the script to test multiple usernames simultaneously, reducing the overall runtime and making it highly effective for testing large wordlists.
+
 
 ## Usage
 
